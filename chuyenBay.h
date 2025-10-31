@@ -18,6 +18,8 @@ class chuyenBay{
 		string getMaChuyen() ; 
 		int getSoGheTrong() ;
 		void setSoGheTrong() ;  
+		void setNgayBay(string ngayBay) ;
+		void setGioBay(string gioBay) ;  
 		int getSoGhe() ; 
 		string getDiemDi() ; 
 		string getDiemDen() ; 

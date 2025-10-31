@@ -6,12 +6,16 @@ using namespace std;
 class quanLyChuyenBay{
 	private:
 		vector<chuyenBay> dsChuyenBay;
-		string matkhau = "admin";
+		string message ; 
 	public: 
 		void getDanhSachChuyenBay() ;  
 		void themChuyenBay();
 		void xoaChuyenBay();
 		void xemLichTrinh();
 		chuyenBay* timChuyenBay(string ma);
+		string getMessage() ; //
+		void setMessage(string message) ; //
+		void Message() ; //
+		void thayDoiLichTrinh() ; // 
 };
 #endif

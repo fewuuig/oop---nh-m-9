@@ -87,7 +87,12 @@ void chuyenBay::tangGhe(){
 int chuyenBay::getSoGhe(){
 	return soGhe ; 
 }
-
+void chuyenBay::setNgayBay(string ngayBay){
+	this->ngayBay = ngayBay ; 
+}
+void chuyenBay::setGioBay(string gioBay){
+	this->gioBay = gioBay ; 
+}
 void chuyenBay::formFrame(){
 	cout<<left ;  
 	cout<<setw(10)<<"Ma so"

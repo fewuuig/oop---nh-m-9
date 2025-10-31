@@ -123,7 +123,8 @@ int main(){
 		        cout<<"8. Thong ke ve"<<endl ; // thong ke loai : thuong va thuong gia
 		        cout<<"9. Nhap ve may bay tu danh sach"<<endl ; 
 		        cout<<"10. xuat file"<<endl ; 
-		        cout<<"11. Thoat"<<endl ;  
+		        cout<<"11. Thay doi lich trinh"<<endl ;  
+		        cout<<"12. Thoat"<<endl ; 
 		        int choose ; cout<<"Nhap lua chon cua ban : " ; cin>>choose ; cin.ignore() ; 
 		        if(choose==1) qlcb.themChuyenBay() ; 
 		        else if(choose==2){	
@@ -152,9 +153,12 @@ int main(){
 		        	qlv.nhapFile() ; 
 				}else if(choose==10){
 		        	qlv.xuatFile() ;  
-				}else if(choose==11) break ;  
+				}else if(choose==11){
+					qlcb.thayDoiLichTrinh() ; 
+				}  else if(choose==12) break ; 
 	        }
 		}else if(role=="user"){
+			qlcb.Message() ; 
 			while(true){
 		        cout<<"===================MENU================="<<endl ; 
 		        cout<<"1. Xem lich trinh"<<endl ; // danh sach cac chuyen bay
